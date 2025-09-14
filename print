@@ -24,7 +24,19 @@ print("\n")
 print("*","**","***","****","*****",sep="\n")
 print("\n")
 print("****","*  *","*  *","****",sep="\n")
+print("\n")
 print("  * "," *** ","*****"," *** ","  * ",sep="\n")
+print("  *  ", " *** ", "*****", " *** ", "  *  ", sep="\n")
+
+name = input("Напиши чё-то")
+print(name)
+
+name ="alise"
+age = 25
+print(name, age)
+
+name1, age1 = "Никита", 24
+print(name1, age1)
 name = "Артём"
 age = 25
 height = 145.65
@@ -44,3 +56,25 @@ a = 13
 b =43
 print(a, b, a*b, a+b)
 print(type(a), type(b), type(a*b), type(a+b))
+a = 3.14
+b = 223
+print(a*b)
+
+
+#** - возведение в степень
+#// - целое деление
+#% - остаток
+a = 4521.45
+b = 5
+c = float(b)
+z = int(a)
+print(a+b, a*b, a**b)
+print(z)
+
+a = 4521.45
+p = round(a)
+b = 5
+c = float(b)
+z = int(a)
+print(a+b, a*b, a**b, round(a))
+print(z)
