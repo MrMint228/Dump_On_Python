@@ -86,3 +86,105 @@ print( (int(number)-1) //20 + 1)
 
 
 print( (int(number)-1) % 20 // 4 + 1)
+
+# name = "Анна"
+# age = 25
+# city = "Москва"
+# hobby = "рисование"
+print("Анна 25 Москва рисование")
+print("Анна","25", "Москва", "рисование", sep= " ")
+print("Анна","25", "Москва", "рисование", sep= ", ")
+print("Анна","25", "Москва", "рисование", sep= "\n")
+print("Анна, 25 лет, живёт в Москве, любит рисование.")
+print("*" * 18)
+print("*Анна",end="            *")
+print("\n*25",end="              *")
+print("\n*Москва",end="          *")
+print("\n*рисование", end="       *")
+print("\n" + "*" * 18)
+print("\n")
+print("Яблоко", "Груша", "Вишня", sep= " ")
+print("Яблоко", "Груша", "Вишня", sep= "-")
+print("Яблоко", "Груша", "Вишня", sep= ", ")
+print("Яблоко", "Груша", "Вишня", sep= "/")
+print("\n")
+print("Имя: Иван","Телефон: 123-456-789","Email: ivan@mail.ru", sep="\n" )
+print("\n")
+print("*","**","***","****","*****",sep="\n")
+print("\n")
+print("****","*  *","*  *","****",sep="\n")
+print("\n")
+print("  * "," *** ","*****"," *** ","  * ",sep="\n")
+print("  *  ", " *** ", "*****", " *** ", "  *  ", sep="\n")
+
+name = input("Напиши чё-то")
+print(name)
+
+name ="alise"
+age = 25
+print(name, age)
+
+name1, age1 = "Никита", 24
+print(name1, age1)
+name = "Артём"
+age = 25
+height = 145.65
+is_student = True
+print(name, age, height, is_student, sep=' ')
+country, sity, language = "Russia", "sT. Petesburg", "Python"
+print(country, sity, language)
+balance = 1000
+print("old " ,balance)
+balance = 1500
+print("new ",balance)
+first_name = "Ivan"
+last_name = "Smith"
+full_name = first_name + " " + last_name
+print(full_name)
+a = 13
+b =43
+print(a, b, a*b, a+b)
+print(type(a), type(b), type(a*b), type(a+b))
+a = 3.14
+b = 223
+print(a*b)
+
+
+#** - возведение в степень
+#// - целое деление
+#% - остаток
+a = 4521.45
+b = 5
+c = float(b)
+z = int(a)
+print(a+b, a*b, a**b)
+print(z)
+
+a = 4521.45
+p = round(a)
+b = 5
+c = float(b)
+z = int(a)
+print(a+b, a*b, a**b, round(a))
+print(z)
+
+number = input("Введи номер квартиры: ")
+print("Подъезд: ")
+
+print( (int(number)-1) //20 + 1)
+
+
+print( (int(number)-1) % 20 // 4 + 1)
+
+x = 10
+y = 10
+is_equal = (x==y)
+print(is_equal)
+print(x>y)
+print(x<y)
+print(x==y)
+print(x!=y)
+print(x>y)
+print(x<y)
+print(x>5 and x< 11)
+print(x == 0 or x == 5)
