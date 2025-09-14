@@ -78,3 +78,11 @@ c = float(b)
 z = int(a)
 print(a+b, a*b, a**b, round(a))
 print(z)
+
+number = input("Введи номер квартиры: ")
+print("Подъезд: ")
+
+print( (int(number)-1) //20 + 1)
+
+
+print( (int(number)-1) % 20 // 4 + 1)
