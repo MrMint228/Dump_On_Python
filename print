@@ -25,3 +25,22 @@ print("*","**","***","****","*****",sep="\n")
 print("\n")
 print("****","*  *","*  *","****",sep="\n")
 print("  * "," *** ","*****"," *** ","  * ",sep="\n")
+name = "Артём"
+age = 25
+height = 145.65
+is_student = True
+print(name, age, height, is_student, sep=' ')
+country, sity, language = "Russia", "sT. Petesburg", "Python"
+print(country, sity, language)
+balance = 1000
+print("old " ,balance)
+balance = 1500
+print("new ",balance)
+first_name = "Ivan"
+last_name = "Smith"
+full_name = first_name + " " + last_name
+print(full_name)
+a = 13
+b =43
+print(a, b, a*b, a+b)
+print(type(a), type(b), type(a*b), type(a+b))
