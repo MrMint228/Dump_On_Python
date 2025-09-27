@@ -286,3 +286,34 @@ for i in range(1,11):
 fruits = ["яблоко", "лимон", "апельсин", "арбуз", "клубника"]
 for i in fruits:
     print(f"Фрукт: {i}")
+
+numbers = list(range(1,11))
+print(numbers)
+for i in range(len(numbers)):
+    if numbers[i] % 2 !=0:
+        continue
+    print(numbers[i])
+
+text = """ 
+ПЕРЧАТКА
+Перед своим зверинцем,
+С баронами, с наследным принцем,
+Король Франциск сидел;
+С высокого балкона он глядел
+На поприще, сраженья ожидая;
+За королем, обворожая
+Цветущей прелестию взгляд,
+Придворных дам являлся пышный ряд."""
+number_of_letter = 0
+numbers_of_words = len(text.split())
+numbers_of_sentence = 0
+for letter in text:
+    if letter != " " and letter != "\n":
+        number_of_letter += 1
+    if letter == "!" or letter == "?" or letter == "…" or letter == ".":
+        numbers_of_sentence += 1
+
+print("Подсчёт")
+print("="*40)
+print(f'Букв: {number_of_letter} Слов: {numbers_of_words}  Предложений: {numbers_of_sentence}')
+print("="*40)
