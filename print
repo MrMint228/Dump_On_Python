@@ -155,3 +155,66 @@ if message:
         name = "Alice"
         age = 25
         print(f"Hello, my name is {name} and my age is {age}")
+        from time import process_time
+
+        name = "Анна"
+        age = 25
+        print("Меня зовут {} и мне {} лет".format(name, age))
+        name = "Аня"
+        age = 21
+        print("{1} {0}".format(name, age))
+        print("{name} {age}".format(name="гоша", age=45))
+        pi = 3.14159
+        print("Число Пи: {:.6f}".format(pi))  # 2 знака после запятой
+        # Вывод: Число Пи: 3.14
+        print("{:<1}".format("левый"))  # Выравнивание по левому краю
+        print("{:>20}".format("правый"))  # Выравнивание по правому краю
+        print("{:^10}".format("центр"))  # Выравнивание по центру
+        # Вывод:
+        # левый
+        #      правый
+        #   центр
+        number = 42
+        print("{:050d}".format(number))  # 5 цифр с ведущими нулями
+        # Вывод: 00042
+my_list = [3,4,4,4,44,4,4,4,4,32323232323232,4,4,4,4,41213,2,32,31,4,41,24,3,5,5,6,6,6,2,7,7,88,331,9,9,0,3232131,34,3]
+my_list.sort()
+print(my_list)
+my_list.sort(reverse=True)
+print(my_list)
+my_string = "hello my name is Anton"
+my_list22 = []
+my_list22 = my_string.split(" ")
+print(my_list22)
+
+joined_string = my_list22
+
+joined_string = " ".join(my_list22)
+print(joined_string)
+
+my_list = {1, 2, 33,2 ,4, 5 , 6, 6, 6,}
+print(max(my_list))
+print(min(my_list))
+fruits = ["apple", "banana", "cherry", "watermelon", "mango"]
+print(fruits)
+print(fruits[0])
+fruits[0], fruits[1] = fruits[1], fruits[0]
+print(fruits)
+numbers = [1, 2, 2,3,4,5,6,7,1]
+print(numbers[0:len(numbers)])
+print(numbers[:len(numbers)])
+print(numbers[:])
+print(numbers[0:len(numbers):5])
+numbers = [1, 2, 2,3,4,5,6,7,1]
+print(numbers[0:len(numbers)])
+print(numbers[:len(numbers)])
+print(numbers[:])
+print(numbers[0:len(numbers):5])
+print(numbers[0:5:1])
+print(numbers[::-1])
+file_names = ["kirill", "yor", "masha", "york", 5, 45.4]
+print(file_names)
+
+
+for name in file_names:
+    print(name, type(name))
