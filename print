@@ -317,3 +317,36 @@ print("Подсчёт")
 print("="*40)
 print(f'Букв: {number_of_letter} Слов: {numbers_of_words}  Предложений: {numbers_of_sentence}')
 print("="*40)
+
+print("Таблица умножения на 5")
+print("=" * 20)
+for i in range(1, 11):
+    print(f"5 * {i} = {5 * i}")
+print("=" * 20)
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 4 ,5, 6, 7, 2 ,5]
+numbers5 = []
+for i in range (len(numbers)):
+    if numbers[i] > 5:
+        numbers5.append(numbers[i])
+print(numbers5)
+
+numbers = [1, 2, 4 ,5 ,6, 7, 8, 44, 41,4 ,5 ,6 ,7, 6 , 8, 8, 3, 3,2, 3, 24, 3,46, 7,334]
+max_number = 0
+for i in range(len(numbers)):
+    if numbers[i] > max_number:
+        max_number  = numbers[i]
+print("=" * 40)
+print("Максимальное число найдено!")
+print(f"максимальное число из списка = {max_number}")
+print("=" * 40)
+
+word = str(input("Введите слово:\n"))
+shift = int(input("Введите число сдвига:\n"))
+cesar_word = ""
+print("Шифруем как Цезарь...")
+print("=" * 20)
+for i in word:
+    cesar_word += chr(ord(i)+shift)
+print(cesar_word)
+print("=" * 20)
