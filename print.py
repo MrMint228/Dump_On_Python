@@ -354,6 +354,9 @@ print("=" * 20)
 import random
 import string
 
+import random
+import string
+
 print("Добро пожаловать в генератор пароля!")
 print("По умолчанию используются только буквы в нижнем регистре")
 print("-" * 60)
@@ -379,4 +382,21 @@ for i in range(password_count):
     print("="*100)
     print("Пароль готов!")
     print(password)
+print("="*100)
+
+marks = [2, 2, 2, 4,4,4,4,4,4,5,5,5,1,2,3,4,5,3,3,3,3,5,5]
+five_count = 0
+summa = 0
+four_count = marks.count(4)
+for i in marks:
+    if i == 5:
+       five_count += 1
+for i in range(len(marks)):
+    summa += marks[i]
+middle_mark = summa / len(marks)
+print("Анализ твоих оценок!")
+print("="*100)
+print(f"Средняя оценка: {middle_mark}")
+print(f"Количество пятерок: {five_count}")
+print(f"Количество четвёрок: {four_count}")
 print("="*100)
