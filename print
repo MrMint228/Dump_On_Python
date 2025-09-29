@@ -107,12 +107,12 @@ print(a)
 
 
 
-x = int(input("напиши число для x: \n"))
+x = int(input("напиши число для password_count: \n"))
 y = int(input("напиши число для y: \n"))
 if x > 0 and y > 0:
-    print("x and y are positive")
+    print("password_count and y are positive")
 elif x < 0 and y < 0:
-    print("x and y are negative")
+    print("password_count and y are negative")
 else:
     print("something wrong")
 message = "    "
@@ -350,3 +350,33 @@ for i in word:
     cesar_word += chr(ord(i)+shift)
 print(cesar_word)
 print("=" * 20)
+
+import random
+import string
+
+print("Добро пожаловать в генератор пароля!")
+print("По умолчанию используются только буквы в нижнем регистре")
+print("-" * 60)
+password_len = int(input("Какая длина вашего пароля?\n"))
+
+password_count = int(input("сколько паролей?\n"))
+
+use_upcase = input("Хотите использовать заглавные буквы y/n?\n")
+use_digit = input("Хотите использовать цифры y/n?\n")
+use_punctuation = input("Хотите использовать спец. символы y/n?\n")
+
+chars = (string.ascii_lowercase)
+if use_upcase == "y":
+    chars += string.ascii_uppercase
+if use_digit == "y":
+    chars += string.digits
+if use_punctuation == "y":
+    chars += string.punctuation
+for i in range(password_count):
+    password = ""
+    for j in range(password_len):
+        password += random.choice(chars)
+    print("="*100)
+    print("Пароль готов!")
+    print(password)
+print("="*100)
