@@ -400,3 +400,33 @@ print(f"Средняя оценка: {middle_mark}")
 print(f"Количество пятерок: {five_count}")
 print(f"Количество четвёрок: {four_count}")
 print("="*100)
+
+print("Поиск простых чисел от 2 до 20")
+print("="*100)
+simple_numbers = []
+for i in range (2,21):
+    print(i)
+    is_go = True
+    for j in range (2,i):
+        if i % j == 0:
+            is_go = False
+            break
+    if is_go == True:
+        simple_numbers.append(i)
+print("="*100)
+print("Простые числа:")
+print(simple_numbers)
+print("="*100)
+
+my_string = ""
+for i in range(10):
+    my_string += "*"
+    print(my_string)
+
+import time
+my_word = ""
+for i in "HATE. LET ME TELL YOU HOW MUCH I'VE COME TO HATE YOU SINCE I BEGAN TO LIVE.":
+    my_word += i
+    print(my_word)
+    time.sleep(0.05)
+
