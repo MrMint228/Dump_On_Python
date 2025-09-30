@@ -429,4 +429,24 @@ for i in "HATE. LET ME TELL YOU HOW MUCH I'VE COME TO HATE YOU SINCE I BEGAN TO 
     my_word += i
     print(my_word)
     time.sleep(0.05)
+print("Расчёт суммы")
+print("=" * 30)
+count_summa = int(input("Сколько вы хотите сложить чисел?\n"))
+summa = 0
+for i in range(count_summa):
+    number =  int(input("Введите ваше число:\n"))
+    summa += number
+print(f"Ваша сумма: {summa}")
+print("=" * 30)
 
+word = "Программирование"
+used_letters = []
+
+for letter in word:
+    if letter not in used_letters:
+        count = 0
+        for i in word:
+            if letter == i:
+             count += 1
+        used_letters.append(letter)
+        print(f"Буква {letter}: {count}")
