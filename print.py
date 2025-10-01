@@ -450,3 +450,54 @@ for letter in word:
              count += 1
         used_letters.append(letter)
         print(f"Буква {letter}: {count}")
+
+numbers = [1, 4, 6 ,7, 2761, 8, 9, 5, 3, 44, 6, 5,  7,5,6,5,5,5,4,3,3,3,32,2,2,22,2,2,2,12,2,22,33,3,38,694]
+for i in range(len(numbers)):
+    for j in range(len(numbers)-1):
+        if numbers[j] > numbers[j+1]:
+            number = numbers[j]
+            numbers[j] = numbers[j+1]
+            numbers[j+1] = number
+
+
+
+print(numbers)
+
+numbers_1 = [1,2 ,4 ,5 ,3,6232, 1,2,5,5]
+numbers_2 = [1,148 ,698 ,5 ,3,22, 1,2,5,5]
+
+def find_average(numbers):
+    average = sum(numbers) / len(numbers)
+    return average
+
+average1 = find_average(numbers_1)
+print(average1)
+print(find_average(numbers_2))
+
+def count_vowels(string):
+    VOWELS = "aeiouAEIOU"
+    count = 0
+    for char in string:
+        if char in VOWELS:
+            count += 1
+    return count
+print(count_vowels("""Hello world! HATE. LET ME TELL
+YOU HOW MUCH I’VE
+COME TO HATE YOU
+SINCE I BEGAN TO
+LIVE"""))
+def function():
+    pass
+def function_1():
+    print("Я НИЧЁ НЕ ДЕЛАЮ")
+function_1()
+def format_data(day: int, month: str):
+    return f"this is {day} of {month}"
+
+print(format_data(day=1, month = 'January'))
+
+def format_data1(*, day: int, month: str) -> str:
+    return f"this is {day} of {month}"
+def greetings(*, name: str, gr: str = "Hello") -> str:
+    return f"{gr} {name}"
+print(greetings(name = "Victor"))
