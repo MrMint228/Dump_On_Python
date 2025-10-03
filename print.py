@@ -501,3 +501,7 @@ def format_data1(*, day: int, month: str) -> str:
 def greetings(*, name: str, gr: str = "Hello") -> str:
     return f"{gr} {name}"
 print(greetings(name = "Victor"))
+
+def greetings(*, name: str, gr : str = "Hello") -> str:
+    return f"{gr} {name}!"
+print(greetings(name = "Anna"))
